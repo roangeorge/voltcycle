@@ -2,7 +2,7 @@
 
 A polished, responsive website for a fictional pre-owned e-bike business. Built as a UI/UX frontend assessment.
 
-**Live:** [deployed URL TBD]
+**Live:** https://voltcycle.vercel.app
 
 ## Stack
 
