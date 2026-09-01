@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-navy: #1a1a2e;
+  --color-navy-light: #24243e;
+  --color-teal: #2b7a6f;
+  --color-teal-light: #34917e;
+  --color-amber: #e8a838;
+  --color-amber-dark: #d4922a;
+  --color-offwhite: #f8f8f8;
+  --color-card: #ffffff;
+  --color-txt: #1a1a1a;
+  --color-txt-secondary: #6b7280;
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--color-offwhite);
+  color: var(--color-txt);
+}
+
+/* smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
