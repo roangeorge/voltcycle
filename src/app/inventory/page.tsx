@@ -47,8 +47,8 @@ function InventoryContent() {
       case 'price-desc':
         list.sort((a, b) => b.price - a.price)
         break
-      default: // newest
-        list.sort((a, b) => new Date(b.addedDate).getTime() - new Date(a.addedDate).getTime())
+      default: // newest — sort by model year desc, then listing date as tiebreaker
+        list.sort((a, b) => b.year - a.year || new Date(b.addedDate).getTime() - new Date(a.addedDate).getTime())
     }
 
     return list

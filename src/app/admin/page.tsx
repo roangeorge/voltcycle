@@ -50,11 +50,9 @@ export default function AdminPage() {
 }
 
 function InventoryList() {
-  const subset = bikes.slice(0, 5)
-
   return (
     <div className="overflow-x-auto">
-      <table className="w-full text-sm">
+      <table className="w-full text-sm min-w-[600px]">
         <thead>
           <tr className="border-b text-left text-txt-secondary">
             <th className="pb-3 font-medium">Photo</th>
@@ -66,7 +64,7 @@ function InventoryList() {
           </tr>
         </thead>
         <tbody className="divide-y">
-          {subset.map(bike => (
+          {bikes.map(bike => (
             <tr key={bike.id} className="hover:bg-gray-50">
               <td className="py-3 pr-3">
                 <div className="relative w-12 h-10 rounded overflow-hidden">
@@ -92,7 +90,7 @@ function InventoryList() {
                   Active
                 </span>
               </td>
-              <td className="py-3 text-right space-x-2">
+              <td className="py-3 text-right whitespace-nowrap space-x-2">
                 <button className="text-xs font-medium text-teal hover:text-teal-light">Edit</button>
                 <button className="text-xs font-medium text-red-500 hover:text-red-700">Delete</button>
               </td>
